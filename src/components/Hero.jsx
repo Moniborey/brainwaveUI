@@ -9,6 +9,7 @@ import {heroIcons} from '../constants'
 import { useRef } from 'react'
 import Generating from './Generating'
 import Notification from './Notification'
+import CompanyLogos from './CompanyLogos'
 
 export default function Hero() {
 
@@ -68,8 +69,8 @@ export default function Hero() {
                             </ScrollParallax>
                         </div>
                     </div>
-                    <Gradient />
                 </div>
+                <Gradient />
                 <div className='absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]'>
                     <img 
                     src={heroBG}
@@ -80,6 +81,7 @@ export default function Hero() {
                 </div>
                 <BackgroundCircles parallaxRef={parallaxRef}/>
             </div>
+            <CompanyLogos className={'hidden relative z-10 mt-20 lg:block'}/>
         </div>
         <BottomLine/>
     </Section>
